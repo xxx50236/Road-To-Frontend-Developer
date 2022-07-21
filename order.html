@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Forms Review</title>
+  </head>
+  <body>
+    <section id="overlay">
+
+        <p id="logo">Order your milktea!</p>
+        <hr>
+        <form action="/submission.html" method="post">
+            <label for="taste">你想要什么口味的奶茶？</label>
+            <input type="text" name="milktea-taste" id="taste">
+
+            <hr>
+
+            <label for="cup-count">你想要几杯？</label>
+            <input type="number" name="cup-count" id="cup-count">
+
+            <hr>
+
+            <p>
+            <label for"sugar-count"> 你需要的糖分量</label>
+            <br>
+            <label for="sugar-count">无糖</label>
+            <progress id="sugar-count" max="100" value="50">你需要的糖分量</progress>
+            <label for="sugar-count">全糖</label>
+            </p>
+        </form>
+    </section>
+  </body>
+</html>
