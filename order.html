@@ -11,24 +11,81 @@
 
         <p id="logo">Order your milktea!</p>
         <hr>
-        <form action="/submission.html" method="post">
+        <form action=".\submission.html" method="post">
             <label for="taste">你想要什么口味的奶茶？</label>
-            <input type="text" name="milktea-taste" id="taste">
+            <input type="text" name="milktea-taste" id="taste" required minlength="2" maxlength="10">
 
             <hr>
 
             <label for="cup-count">你想要几杯？</label>
-            <input type="number" name="cup-count" id="cup-count">
+            <input type="number" name="cup-count" id="cup-count" required min="1" max="4">
 
             <hr>
-
-            <p>
+    
             <label for"sugar-count"> 你需要的糖分量</label>
             <br>
             <label for="sugar-count">无糖</label>
             <progress id="sugar-count" max="100" value="50">你需要的糖分量</progress>
             <label for="sugar-count">全糖</label>
-            </p>
+
+            <hr>
+
+            <label for="">你想要什么顶料？</label>
+            <br>
+            <input type="checkbox" name="ice-cream" id="ice-cream">
+            <label for="ice-cream">冰激凌</label>
+
+            <input type="checkbox" name="milk-top" id="milk-top">
+            <label for="milk-top">奶盖</label>
+
+            <input type="checkbox" name="coco" id="coco">
+            <label for="coco">冰激凌</label>
+
+            <hr>
+
+            <label for="">你需要加冰吗？</label>
+            <br>
+
+            <input type="radio" name="ice" id="yes">
+            <label for="yes">yes</label>
+
+            <input type="radio" name="ice" id="no">
+            <label for="no">no</label>
+
+            <hr>
+
+            <label for="add">你需要加什么料</label>
+            <select name="add" id="add">
+              <option value="">珍珠</option>
+              <option value="">波霸</option>
+              <option value="">布丁</option>
+            </select>
+
+            <hr>
+
+            <label for="cup-sizer">你要什么规格</label>
+            <select name="add" id="cup-size">
+              <option value="">小杯</option>
+              <option value="">中杯</option>
+              <option value="">大杯</option>
+            </select>
+
+            <hr>
+            
+            <label for="extra-info">您还有别的什么要求吗</label>
+            <br>
+            <textarea name="extra-info" id="extra-info" cols="30" rows="10"></textarea>
+
+            <hr>
+
+            <label for="tel">您的联系方式</label>
+            <input type="tel" name="tel" id="tel", pattern="[0-9]{11}">
+            
+            <hr>
+
+
+            <button type="submit">submit</button>
+
         </form>
     </section>
   </body>
