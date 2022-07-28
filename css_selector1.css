@@ -1,0 +1,26 @@
+ul {
+    border: 1px solid black;
+    color: gray;
+}
+
+ul  ol {
+    background-color: red;
+}
+
+ul ol ol {
+    border: 1px dashed white;
+}
+
+ul li:first-child, ol li:first-child {
+    font-style: italic;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-bottom: 1px solid purple;
+}
+
+ul ol ol li:last-child {
+    font-style: italic;
+    color: purple;
+    background-color: green;
+}
