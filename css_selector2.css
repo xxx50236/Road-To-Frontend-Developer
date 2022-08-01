@@ -1,0 +1,20 @@
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+th {
+    color: white;
+    background-color: black;
+}
+
+tr th:first-child::first-line {
+    color: red;
+}
+
+td:nth-child(3n) {
+    color: rgba(255, 255, 255, 0.5);
+}
