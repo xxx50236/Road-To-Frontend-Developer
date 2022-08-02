@@ -1,0 +1,19 @@
+a {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a[href*="contact"] {
+    text-decoration-color: pink;
+}
+
+a[href^="http"] {
+    border: 1px solid blue;
+}
