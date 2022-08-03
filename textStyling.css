@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Architects Daughte';
+    src: url('https://fonts.font.im/css?family=Architects+Daughter');
+}
+
+html {
+    font-family: 'Architects Daughte', cursive;
+}
+
+h2 {
+    writing-mode: vertical-lr;
+    float: left;
+    height: 100%;
+    font-size: 3em;
+    color: blue;
+}
+
+p:last-of-type {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
