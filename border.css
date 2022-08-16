@@ -1,0 +1,24 @@
+h1 + div {
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+div div:nth-child(3) {
+    width: 100px;
+    height: 100px;
+    background: conic-gradient( 
+     red 6deg, orange 6deg 18deg, yellow 18deg 45deg, 
+     green 45deg 110deg, blue 110deg 200deg, purple 200deg);
+    text-align: center;
+}
+
+.text {
+    /* background:linear-gradient(45deg, blue, red); */
+    color: white;
+    line-height: 100px;
+}
